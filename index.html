@@ -54,16 +54,24 @@
     <!-- タブ１ -->
     <div>
       <div>
-        <input type='checkbox'>カテゴリ1
-        <input type='checkbox'>カテゴリ2
-        <input type='checkbox'>カテゴリ3
-        <input type='checkbox'>カテゴリ4
+        <label>
+          <input type='checkbox'>カテゴリ1
+        </label>
+        <label>
+          <input type='checkbox'>カテゴリ2
+        </label>
+        <label>
+          <input type='checkbox'>カテゴリ3
+        </label>
+        <label>
+          <input type='checkbox'>カテゴリ4
+        </label>
       </div>
       <div>
         <a href=''>もっと詳しく</a>
       </div>
       <div>
-        <input type='text'placeholder='検索フォーム'>
+        <input type='search' placeholder='検索フォーム'>
       </div>
       <div>
         <button type='submit'>検索する</button>
@@ -122,16 +130,16 @@
     <!-- タブ３ -->
     <div>
       <div>
-        <div>
-          <p>選択1</p>
-        </div>
-        <div>
-          <select>
-            <option value='選択肢1'>選択肢1</option>
-            <option value='選択肢2'>選択肢2</option>
-            <option value='選択肢3'>選択肢3</option>
-          </select>
-        </div>
+        <dl>
+          <dt>選択1</dt>
+          <dd>
+            <select>
+              <option value='選択肢1'>選択肢1</option>
+              <option value='選択肢2'>選択肢2</option>
+              <option value='選択肢3'>選択肢3</option>
+            </select>
+          </dd>
+        </dl>
       </div>
       <div>
         <div>
@@ -184,5 +192,223 @@
         <p>説明テキスト説明テキスト</p>
       </li>
     </ul>
+    <!-- ランキングコンテンツ -->
+    <section>
+      <div>
+        <h2>ランキングコンテンツ</h2>
+        <p>2017年0月00日 更新</p>
+      </div>
+      <ol>
+        <li>
+          <img src='' alt='ランキング1位の画像'>
+          <p>タイトルタイトルタイトルタイトル</p>
+        </li>
+        <li>
+          <img src='' alt='ランキング2位の画像'>
+          <p>タイトルタイトルタイトルタイトル</p>
+        </li>
+        <li>
+          <img src='' alt='ランキング3位の画像'>
+          <p>タイトルタイトルタイトルタイトル</p>
+        </li>
+      </ol>
+      <!-- アコーディオン部分　▼ここから -->
+      <details>
+        <summary>もっと見る</summary>
+        <ol>
+          <li>
+            <img src='' alt='ランキング4位の画像'>
+            <p>タイトルタイトルタイトルタイトル</p>
+          </li>
+        </ol>
+      </details>
+      <!-- アコーディオン部分　▲ここまで -->
+    </section>
+
+    <!-- 特集 -->
+    <section>
+      <div>
+        <h2>特集</h2>
+      </div>
+      <ul>
+        <li>
+          <a href=''>
+            <div>
+              <img src='' alt='見出し画像'>
+            </div>
+            <div>
+              <p><span>小見出し</span>テキスト</p>
+              <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
+              <p>[カテゴリ]</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href=''>
+            <div>
+              <img src='' alt='見出し画像'>
+            </div>
+            <div>
+              <p><span>見出し</span>テキスト</p>
+              <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
+              <p>[カテゴリ]</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href=''>
+            <div>
+              <img src='' alt='見出し画像'>
+            </div>
+            <div>
+              <p><span>小見出し</span>テキスト</p>
+              <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
+              <p>[カテゴリ]</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <!-- アコーディオン部分　▼ここから -->
+      <details>
+        <summary>もっとみる</summary>
+        <ul>
+          <li>
+            <a href=''>
+              <div>
+                <img src='' alt='見出し画像'>
+              </div>
+              <div>
+                <p><span>小見出し</span>テキスト</p>
+                <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
+                <p>[カテゴリ]</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </details>
+      <!-- アコーディオン部分　▲ここまで -->
+    </section>
+
+    <!-- 記事リスト -->
+    <section>
+      <div>
+        <h2>記事リスト</h2>
+      </div>
+      <ul>
+        <li>
+          <a href=''>
+            <div>
+              <img src='' alt='記事リスト画像'>
+            </div>
+            <div>
+              <p>タイトル</p>
+              <p>説明テキスト説明テキスト</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href=''>
+            <div>
+              <img src='' alt='記事リスト画像'>
+            </div>
+            <div>
+              <p>タイトルタイトルタイトルタイトル</p>
+              <p>説明テキスト説明テキスト</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href=''>
+            <div>
+              <img src='' alt='記事リスト画像'>
+            </div>
+            <div>
+              <p>タイトルタイトルタイトルタイトル</p>
+              <p>説明テキスト説明テキスト説明テキスト説明テキスト</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <!-- アコーディオン部分　▼ここから -->
+      <details>
+        <summary>もっとみる</summary>
+        <li>
+          <a href=''>
+            <div>
+              <img src='' alt='記事リスト画像'>
+            </div>
+            <div>
+              <p>タイトルタイトルタイトルタイトル</p>
+              <p>説明テキスト説明テキスト説明テキスト説明テキスト</p>
+            </div>
+          </a>
+        </li>
+      <!-- アコーディオン部分　▲ここまで -->
+      </details>
+    </sectoin>
+
+    <!-- カテゴリリスト -->
+    <section>
+      <div>
+        <h2>カテゴリリスト</h2>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <img src='' alt='カテゴリ画像'>
+            <p>カテゴリ名</p>
+          </li>
+          <li>
+            <img src='' alt='カテゴリ画像'>
+            <p>カテゴリ名</p>
+          </li>
+          <li>
+            <img src='' alt='カテゴリ画像'>
+            <p>カテゴリ名</p>
+          </li>
+          <li>
+            <img src='' alt='カテゴリ画像'>
+            <p>カテゴリ名カテゴリ名</p>
+          </li>
+          <li>
+            <img src='' alt='カテゴリ画像'>
+            <p>カテゴリ名</p>
+          </li>
+          <li>
+            <img src='' alt='カテゴリ画像'>
+            <p>カテゴリ名</p>
+          </li>
+          <li>
+            <img src='' alt='カテゴリ画像'>
+            <p>カテゴリ名</p>
+          </li>
+          <li>
+            <img src='' alt='カテゴリ画像'>
+            <p>カテゴリ名カテゴリ名</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+      <div>
+        <ul>
+          <li>
+            <a href=''>フッターリンク1</a>
+          </li>
+          <li>
+            <a href=''>フッターリンク2</a>
+          </li>
+          <li>
+            <a href=''>フッターリンク3</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p><small>Copyright ©︎dummytext</small></p>
+      </div>
+    </footer>
   </body>
 </html>
