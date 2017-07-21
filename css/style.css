@@ -1,2 +1,37 @@
+p,
+h1,
+h2,
+ul {
+  margin: 0;
+  padding: 0; }
+
 ul {
   list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.text {
+  text-align: center; }
+
+.text-center {
+  text-align: center; }
+
+.heading-title {
+  border-top: solid 4px #00f;
+  border-bottom: solid 1px #00f; }
+
+.media-container {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #00f;
+  padding: 10px; }
+
+.media-thumbnail-container {
+  margin-right: 10px; }
+
+.media-thumbnail {
+  height: 90px; }
+
+.media-title {
+  color: #00f; }
