@@ -1,0 +1,27 @@
+.media {
+
+  .media-container {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: solid 1px $border-color;
+    padding: 10px;
+  }
+
+  .media-container-center {
+    align-items: center;
+  }
+
+  .media-thumbnail {
+    height: 90px;
+  }
+
+  .media-thumbnail-container {
+    margin-right: 10px;
+  }
+
+  .media-title {
+    color: #00f;
+    font-size: 16px;
+  }
+
+}

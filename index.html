@@ -175,7 +175,7 @@
       <ul>
         <li>
           <img src='' alt=''>
-          <a href=''>タイトルタイトルタイトルタイトル</a>
+          <a href=''>タイトル</a>
           <p>説明テキスト説明テキスト</p>
         </li>
         <li>
@@ -198,7 +198,7 @@
     <!-- ランキングコンテンツ -->
     <section>
       <div>
-        <h2>ランキングコンテンツ</h2>
+        <h2 class='heading-title'>ランキングコンテンツ</h2>
         <p>2017年0月00日 更新</p>
       </div>
       <ol>
@@ -221,18 +221,22 @@
     <!-- 特集 -->
     <section>
       <div>
-        <h2>特集</h2>
+        <h2 class='heading-title'>特集</h2>
       </div>
       <ul>
         <li>
           <a href=''>
-            <div>
-              <img src='' alt='見出し画像'>
-            </div>
-            <div>
-              <p><span>小見出し</span>テキスト</p>
-              <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
-              <p>[カテゴリ]</p>
+            <div class='media'>
+              <div class='media-container'>
+                <div class='media-thumbnail-container'>
+                  <img src='' alt='見出し画像'>
+                </div>
+                <div class='media-body'>
+                  <p><span>小見出し</span>テキスト</p>
+                  <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
+                  <p>[カテゴリ]</p>
+                </div>
+              </div>
             </div>
           </a>
         </li>
@@ -267,39 +271,51 @@
     <!-- 記事リスト -->
     <section>
       <div>
-        <h2>記事リスト</h2>
+        <h2 class='heading-title'>記事リスト</h2>
       </div>
       <ul>
         <li>
           <a href=''>
-            <div>
-              <img src='' alt='記事リスト画像'>
-            </div>
-            <div>
-              <p>タイトル</p>
-              <p>説明テキスト説明テキスト</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href=''>
-            <div>
-              <img src='' alt='記事リスト画像'>
-            </div>
-            <div>
-              <p>タイトルタイトルタイトルタイトル</p>
-              <p>説明テキスト説明テキスト</p>
+            <div class='media'>
+              <div class='media-container media-container-center'>
+                <div class='media-thumbnail-container'>
+                  <img class='media-thumbnail' src='./img/onsen.jpg' alt='記事リスト画像'>
+                </div>
+                <div class='media-body'>
+                  <h3 class='media-title'>夏に行きたい温泉TOP10</h3>
+                  <p>2017.7.12</p>
+                </div>
+              </div>
             </div>
           </a>
         </li>
         <li>
           <a href=''>
-            <div>
-              <img src='' alt='記事リスト画像'>
+            <div class='media'>
+              <div class='media-container media-container-center'>
+                <div class='media-thumbnail-container'>
+                  <img class='media-thumbnail' src='./img/onsen2.jpg' alt='記事リスト画像'>
+                </div>
+                <div class='media-body'>
+                  <h3 class='media-title'>神経痛、冷え性、五十肩、そんな症状を改善！薬理効果のある温泉旅館まとめ</h3>
+                  <p>2017.7.16</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <p>タイトルタイトルタイトルタイトル</p>
-              <p>説明テキスト説明テキスト説明テキスト説明テキスト</p>
+          </a>
+        </li>
+        <li>
+          <a href=''>
+            <div class='media'>
+              <div class='media-container media-container-center'>
+                <div class='media-thumbnail-container'>
+                  <img class='media-thumbnail' src='./img/onsen3.jpg' alt='記事リスト画像'>
+                </div>
+                <div class='media-body'>
+                  <h3 class='media-title'>プロに学ぶ「体に優しい」入浴術。半身浴はもう古い！</h3>
+                  <p>2017.7.20</p>
+                </div>
+              </div>
             </div>
           </a>
         </li>
@@ -310,7 +326,7 @@
     <!-- カテゴリリスト -->
     <section>
       <div>
-        <h2>カテゴリリスト</h2>
+        <h2 class='heading-title'>カテゴリリスト</h2>
       </div>
       <div>
         <ul>
