@@ -11,20 +11,21 @@ ul {
 a {
   text-decoration: none; }
 
-.text {
-  text-align: center; }
+.heading-title {
+  border-top: solid 4px #00f;
+  border-bottom: solid 1px #00f; }
 
 .text-center {
   text-align: center; }
 
 .heading-title {
-  border-top: solid 4px #00f;
-  border-bottom: solid 1px #00f; }
+  border-top: solid 4px #222;
+  border-bottom: solid 1px #222; }
 
 .media-container {
   display: flex;
   align-items: center;
-  border-bottom: solid 1px #00f;
+  border-bottom: solid 1px #222;
   padding: 10px; }
 
 .media-thumbnail-container {
@@ -35,3 +36,6 @@ a {
 
 .media-title {
   color: #00f; }
+
+.text-center {
+  text-align: center; }

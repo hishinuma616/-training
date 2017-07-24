@@ -1,0 +1,27 @@
+.text-center {
+  text-align: center;
+}
+
+.heading-title {
+  border-top: solid 4px $border-color;
+  border-bottom: solid 1px $border-color;
+}
+
+.media-container {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px $border-color;
+  padding: 10px;
+}
+
+.media-thumbnail-container {
+  margin-right: 10px;
+}
+
+.media-thumbnail {
+  height: 90px;
+}
+
+.media-title {
+  color: #00f;
+}
