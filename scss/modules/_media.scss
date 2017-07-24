@@ -1,18 +1,23 @@
-.media-container {
-  display: flex;
-  align-items: center;
-  border-bottom: solid 1px $border-color;
-  padding: 10px;
-}
+.media {
 
-.media-thumbnail-container {
-  margin-right: 10px;
-}
+  .media-container {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px $border-color;
+    padding: 10px;
+  }
 
-.media-thumbnail {
-  height: 90px;
-}
+  .media-thumbnail {
+    height: 90px;
+  }
 
-.media-title {
-  color: #00f;
+  .media-thumbnail-container {
+    margin-right: 10px;
+  }
+
+  .media-title {
+    color: #00f;
+    font-size: 16px;
+  }
+
 }
