@@ -3,6 +3,9 @@
   <head>
      <meta charset='UTF-8'>
      <meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=no'>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+     <script src='./js/text.js'></script>
+     <script src='./js/acodion.js'></script>
      <title>コーディング課題</title>
      <link rel='stylesheet' href='css/style.css'>
   </head>
@@ -29,7 +32,7 @@
       <p>パンくずリスト</p>
     </div>
     <div>
-      <img src='img/mainVisual-img.jpg' alt='メインビジュアル'>
+      <img src='' alt='メインビジュアル'>
     </div>
 
     <!-- タブ切り替えボタン -->
@@ -198,24 +201,85 @@
     <!-- ランキングコンテンツ -->
     <section>
       <div>
-        <h2 class='heading-title'>ランキングコンテンツ</h2>
-        <p>2017年0月00日 更新</p>
+        <h2 class='heading-title'>
+          <p>ランキングコンテンツ</p>
+          <p>2017年0月00日 更新</p>
+        </h2>
       </div>
-      <ol>
-        <li>
-          <img src='' alt='ランキング1位の画像'>
-          <p>タイトルタイトルタイトルタイトル</p>
+      <ol class='ranking'>
+        <li class='ranking-wide'>
+          <div class='ranking-ribbon-container'>
+            <div class='ranking-container'>
+              <div class='ranking-ribbon-area'>
+                <span class='ranking-ribbon'>1位</span>
+              </div>
+              <div class='ranking-thumbnail'>
+                <img src='./img/ranking1.jpg' alt='ランキング1位の画像'>
+              </div>
+              <h3 class='ranking-title'>白川郷（岐阜）</h3>
+            </div>
+          </div>
         </li>
         <li>
-          <img src='' alt='ランキング2位の画像'>
-          <p>タイトルタイトルタイトルタイトル</p>
+          <div class='ranking-ribbon-container'>
+            <div class='ranking-container ranking-container-center-line'>
+              <div class='ranking-ribbon-area'>
+                <span class='ranking-ribbon'>2位</span>
+              </div>
+              <div class='ranking-thumbnail'>
+                <img src='./img/ranking2.jpg' alt='ランキング2位の画像'>
+              </div>
+              <h3 class='ranking-title js-short-text'>おかげ横丁(三重)</h3>
+            </div>
+          </div>
         </li>
         <li>
-          <img src='' alt='ランキング3位の画像'>
-          <p>タイトルタイトルタイトルタイトル</p>
+          <div class='ranking-ribbon-container'>
+            <div class='ranking-container'>
+              <div class='ranking-ribbon-area'>
+                <span class='ranking-ribbon'>3位</span>
+              </div>
+              <div class='ranking-thumbnail'>
+                <img src='./img/ranking3.jpg' alt='ランキング3位の画像'>
+              </div>
+              <h3 class='ranking-title js-short-text'>伊豆（静岡）</h3>
+            </div>
+          </div>
         </li>
+        <div class='js-acodion is-hide'>
+          <ol class='ranking'>
+            <li>
+              <div class='ranking-ribbon-container'>
+                <div class='ranking-container ranking-container-center-line'>
+                  <div class='ranking-ribbon-area'>
+                    <span class='ranking-ribbon'>4位</span>
+                  </div>
+                  <div class='ranking-thumbnail'>
+                    <img src='./img/ranking4.jpg' alt='ランキング4位の画像'>
+                  </div>
+                  <h3 class='ranking-title js-short-text'>モンサンミッシェル</h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class='ranking-ribbon-container'>
+                <div class='ranking-container'>
+                  <div class='ranking-ribbon-area'>
+                    <span class='ranking-ribbon'>5位</span>
+                  </div>
+                  <div class='ranking-thumbnail'>
+                    <img src='./img/ranking5.jpg' alt='ランキング5位の画像'>
+                  </div>
+                  <h3 class='ranking-title js-short-text'>清水寺（京都）</h3>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div class='button js-acodion-button l-align-center'>
+          <p>▼もっと見る</p>
+        </div>
       </ol>
-      <a href=''>もっと見る</a>
     </section>
 
     <!-- 特集 -->

@@ -2,7 +2,13 @@
 @import './base/setting';
 @import '../css/sanitize';
 
+//layout
+@import './layout/utility';
+
 //module
 @import './modules/heading';
 @import './modules/media';
-@import './layout/text';
+@import './modules/ranking';
+
+//state
+@import './state/state';
