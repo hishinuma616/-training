@@ -1,6 +1,6 @@
 $(function() {
     var count = 7;
- $('.js-short-text').each(function() {
+ $('.js-text-short').each(function() {
      var thisText = $(this).text();
       var textLength = thisText.length;
        if (textLength > count) {

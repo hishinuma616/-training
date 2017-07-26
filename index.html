@@ -198,8 +198,8 @@
         </li>
       </ul>
     </div>
-    <!-- ランキングコンテンツ -->
-    <section>
+    <!-- ランキングコンテンツ　▼ここから -->
+    <section class='l-bottom backcolor-white'>
       <div>
         <h2 class='heading-title'>
           <p>ランキングコンテンツ</p>
@@ -229,7 +229,7 @@
               <div class='ranking-thumbnail'>
                 <img src='./img/ranking2.jpg' alt='ランキング2位の画像'>
               </div>
-              <h3 class='ranking-title js-short-text'>おかげ横丁(三重)</h3>
+              <h3 class='ranking-title js-text-short'>おかげ横丁(三重)</h3>
             </div>
           </div>
         </li>
@@ -242,11 +242,11 @@
               <div class='ranking-thumbnail'>
                 <img src='./img/ranking3.jpg' alt='ランキング3位の画像'>
               </div>
-              <h3 class='ranking-title js-short-text'>伊豆（静岡）</h3>
+              <h3 class='ranking-title js-text-short'>伊豆（静岡）</h3>
             </div>
           </div>
         </li>
-        <div class='js-acodion is-hide'>
+        <div class='js-acodion-body is-hide'>
           <ol class='ranking'>
             <li>
               <div class='ranking-ribbon-container'>
@@ -257,7 +257,7 @@
                   <div class='ranking-thumbnail'>
                     <img src='./img/ranking4.jpg' alt='ランキング4位の画像'>
                   </div>
-                  <h3 class='ranking-title js-short-text'>モンサンミッシェル</h3>
+                  <h3 class='ranking-title js-text-short'>モンサンミッシェル</h3>
                 </div>
               </div>
             </li>
@@ -270,20 +270,21 @@
                   <div class='ranking-thumbnail'>
                     <img src='./img/ranking5.jpg' alt='ランキング5位の画像'>
                   </div>
-                  <h3 class='ranking-title js-short-text'>清水寺（京都）</h3>
+                  <h3 class='ranking-title js-text-short'>清水寺（京都）</h3>
                 </div>
               </div>
             </li>
           </ol>
         </div>
-        <div class='button js-acodion-button l-align-center'>
-          <p>▼もっと見る</p>
-        </div>
       </ol>
+      <div class='button js-acodion-button l-align-center'>
+        <p>▼もっと見る</p>
+      </div>
     </section>
+    <!-- ランキングコンテンツ　▲ここまで -->
 
-    <!-- 特集 -->
-    <section>
+    <!-- 特集　▼ここから -->
+    <section class='l-bottom backcolor-white'>
       <div>
         <h2 class='heading-title'>特集</h2>
       </div>
@@ -293,12 +294,16 @@
             <div class='media'>
               <div class='media-container'>
                 <div class='media-thumbnail-container'>
-                  <img src='' alt='見出し画像'>
+                  <img class='media-thumbnail' src='./img/tokusyu1.jpg' alt='見出し画像'>
                 </div>
                 <div class='media-body'>
-                  <p><span>小見出し</span>テキスト</p>
-                  <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
-                  <p>[カテゴリ]</p>
+                  <p><span class='label l-align-center'>グルメ</span>テキスト</p>
+                  <div class='media-title'>
+                    <h3 class='media-title'>
+                      カフェオレの美味しい喫茶店特集
+                    </h3>
+                  </div>
+                  <p>2017.8.10</p>
                 </div>
               </div>
             </div>
@@ -306,34 +311,74 @@
         </li>
         <li>
           <a href=''>
-            <div>
-              <img src='' alt='見出し画像'>
-            </div>
-            <div>
-              <p><span>見出し</span>テキスト</p>
-              <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
-              <p>[カテゴリ]</p>
+            <div class='media'>
+              <div class='media-container'>
+                <div class='media-thumbnail-container'>
+                  <img class='media-thumbnail'src='./img/tokusyu2.jpg' alt='見出し画像'>
+                </div>
+                <div class='media-body'>
+                  <p><span class='label l-align-center'>アウトドア</span>テキスト</p>
+                  <div class='media-title'>
+                    <h3 class='media-title'>
+                      サイクリング
+                    </h3>
+                  </div>
+                  <p>2017.6.16</p>
+                </div>
+              </div>
             </div>
           </a>
         </li>
         <li>
-          <a href=''>
-            <div>
-              <img src='' alt='見出し画像'>
+          <div class='media'>
+            <div class='media-container'>
+              <div class='media-thumbnail-container'>
+                <img class='media-thumbnail' src='./img/tokusyu3.jpg' alt='見出し画像'>
+              </div>
+              <div class='media-body'>
+                <p><span class='label l-align-center'>ライフハック</span>テキスト</p>
+                <div class='media-title'>
+                  <h3 class='media-title'>
+                    歩きスマホにご用心
+                  </h3>
+                </div>
+                <p>2017.4.4</p>
+              </div>
             </div>
-            <div>
-              <p><span>小見出し</span>テキスト</p>
-              <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
-              <p>[カテゴリ]</p>
-            </div>
-          </a>
+          </div>
         </li>
+        <!-- アコーディオン部分　▼ここから -->
+        <div class='js-acodion-body is-hide'>
+          <ul>
+            <li>
+              <a href=''>
+                <div class='media'>
+                  <div class='media-container media-container-center'>
+                    <div class='media-thumbnail-container'>
+                      <img class='media-thumbnail' src='./img/tokusyu4.jpg' alt='見出し画像'>
+                    </div>
+                    <div class='media-body'>
+                      <p><span class='label l-align-center'>恋愛</span>テキスト</p>
+                      <h3 class='media-title'>
+                        おすすめデートスポット
+                      </h3>
+                      <p>2017.3.4</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- アコーディオン部分　▲ここまで -->
       </ul>
-      <a href=''>もっと見る</a>
+      <div class='button js-acodion-button l-align-center'>
+        <p>▼もっと見る</p>
+      </div>
     </section>
+    <!-- 特集　▲ここまで -->
 
     <!-- 記事リスト -->
-    <section>
+    <section class='l-bottom backcolor-white'>
       <div>
         <h2 class='heading-title'>記事リスト</h2>
       </div>
@@ -343,7 +388,7 @@
             <div class='media'>
               <div class='media-container media-container-center'>
                 <div class='media-thumbnail-container'>
-                  <img class='media-thumbnail' src='./img/onsen.jpg' alt='記事リスト画像'>
+                  <img class='media-thumbnail-lage' src='./img/onsen.jpg' alt='記事リスト画像'>
                 </div>
                 <div class='media-body'>
                   <h3 class='media-title'>夏に行きたい温泉TOP10</h3>
@@ -358,7 +403,7 @@
             <div class='media'>
               <div class='media-container media-container-center'>
                 <div class='media-thumbnail-container'>
-                  <img class='media-thumbnail' src='./img/onsen2.jpg' alt='記事リスト画像'>
+                  <img class='media-thumbnail-lage' src='./img/onsen2.jpg' alt='記事リスト画像'>
                 </div>
                 <div class='media-body'>
                   <h3 class='media-title'>神経痛、冷え性、五十肩、そんな症状を改善！薬理効果のある温泉旅館まとめ</h3>
@@ -373,7 +418,7 @@
             <div class='media'>
               <div class='media-container media-container-center'>
                 <div class='media-thumbnail-container'>
-                  <img class='media-thumbnail' src='./img/onsen3.jpg' alt='記事リスト画像'>
+                  <img class='media-thumbnail-lage' src='./img/onsen3.jpg' alt='記事リスト画像'>
                 </div>
                 <div class='media-body'>
                   <h3 class='media-title'>プロに学ぶ「体に優しい」入浴術。半身浴はもう古い！</h3>
@@ -385,10 +430,10 @@
         </li>
       </ul>
       <a href=''>もっと見る</a>
-    </sectoin>
+    </section>
 
     <!-- カテゴリリスト -->
-    <section>
+    <section class='l-bottom backcolor-white'>
       <div>
         <h2 class='heading-title'>カテゴリリスト</h2>
       </div>
