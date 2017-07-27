@@ -1,24 +1,14 @@
 .ranking {
-
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
+  width: 50%;
+  flex-grow: 1;
 
   .ranking-wide {
     width: 100%;
     flex-grow: 1;
   }
 
-  li {
-    width: 50%;
-    flex-grow: 1;
-  }
-
-  .ranking-ribbon-container {
-    display: block;
-    position: relative;
-  }
-
-  .ranking-ribbon-area {
+  .ranking-ribbon {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,7 +17,7 @@
     overflow: hidden;
   }
 
-  .ranking-ribbon {
+  .ranking-ribbon-text {
     display: inline-block;
     position: absolute;
     padding: 5px 0;
@@ -48,6 +38,7 @@
   }
 
   .ranking-container {
+    position: relative;
     border-bottom: solid 1px $border-color;
     padding: 10px;
   }
@@ -56,17 +47,22 @@
     border-right: solid 1px $border-color;
   }
 
+  .ranking-thumbnail-container {
+
+  }
+
   .ranking-thumbnail {
-    img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-    }
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
   }
 
   .ranking-title {
     font-weight: bold;
     font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
 }

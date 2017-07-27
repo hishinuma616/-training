@@ -17,7 +17,7 @@ a {
 body {
   background-color: #eaeaea; }
 
-.backcolor-white {
+.section-base {
   background-color: #fff; }
 
 /*! sanitize.css v5.0.0 | CC0 License | github.com/jonathantneal/sanitize.css */
@@ -539,6 +539,20 @@ textarea,
 .l-bottom {
   margin-bottom: 40px; }
 
+.l-bottom-small {
+  margin-bottom: 20px; }
+
+.l-margin-right {
+  margin-right: 24px; }
+
+.l-side-layouyt {
+  display: flex;
+  justify-content: center; }
+
+.l-ranking-layout {
+  display: flex;
+  flex-wrap: wrap; }
+
 .heading-title {
   border-top: solid 4px #9b9b9b;
   border-bottom: solid 1px #9b9b9b;
@@ -556,7 +570,7 @@ textarea,
 .media .media-thumbnail {
   width: 90px; }
 
-.media .media-thumbnail-lage {
+.media .media-thumbnail-large {
   width: 130px; }
 
 .media .media-thumbnail-container {
@@ -567,25 +581,20 @@ textarea,
   font-size: 16px; }
 
 .ranking {
-  display: flex;
-  flex-wrap: wrap; }
+  position: relative;
+  width: 50%;
+  flex-grow: 1; }
   .ranking .ranking-wide {
     width: 100%;
     flex-grow: 1; }
-  .ranking li {
-    width: 50%;
-    flex-grow: 1; }
-  .ranking .ranking-ribbon-container {
-    display: block;
-    position: relative; }
-  .ranking .ranking-ribbon-area {
+  .ranking .ranking-ribbon {
     position: absolute;
     top: 0;
     left: 0;
     width: 85px;
     height: 85px;
     overflow: hidden; }
-  .ranking .ranking-ribbon {
+  .ranking .ranking-ribbon-text {
     display: inline-block;
     position: absolute;
     padding: 5px 0;
@@ -604,17 +613,21 @@ textarea,
     border-top: dashed 1px rgba(255, 255, 255, 0.65);
     border-bottom: dashed 1px rgba(255, 255, 255, 0.65); }
   .ranking .ranking-container {
+    position: relative;
     border-bottom: solid 1px #9b9b9b;
     padding: 10px; }
   .ranking .ranking-container-center-line {
     border-right: solid 1px #9b9b9b; }
-  .ranking .ranking-thumbnail img {
+  .ranking .ranking-thumbnail {
     width: 100%;
     height: 150px;
     object-fit: cover; }
   .ranking .ranking-title {
     font-weight: bold;
-    font-size: 14px; }
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
 
 .label {
   display: inline-block;
@@ -624,6 +637,18 @@ textarea,
   border-radius: 4px;
   font-size: 12px;
   margin-right: 10px; }
+
+.card {
+  display: inline-block;
+  border-radius: 10px;
+  border: solid 1px #fff; }
+  .card .card-container {
+    width: 150px; }
+  .card .card-thumbnail {
+    height: 120px; }
+
+.section-base {
+  background-color: #fff; }
 
 .is-hide {
   display: none; }

@@ -1,0 +1,21 @@
+.card {
+  display: inline-block;
+  border-radius: 10px;
+  border: solid 1px #fff;
+
+    .card-container {
+      width: 150px;
+    }
+
+    .card-thumbnail-container {
+
+    }
+
+    .card-thumbnail {
+      height: 120px;
+    }
+    //mediaにもタイトルあるから、別でモジュール作っても良さそうです
+    .card-title {
+
+    }
+}
