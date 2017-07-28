@@ -3,11 +3,6 @@
   width: 50%;
   flex-grow: 1;
 
-  .ranking-wide {
-    width: 100%;
-    flex-grow: 1;
-  }
-
   .ranking-ribbon {
     position: absolute;
     top: 0;
@@ -43,7 +38,7 @@
     padding: 10px;
   }
 
-  .ranking-container-center-line {
+  .ranking-container-separate {
     border-right: solid 1px $border-color;
   }
 
@@ -65,4 +60,8 @@
     white-space: nowrap;
   }
 
+}
+
+.ranking-wide {
+  width: 100%;
 }
