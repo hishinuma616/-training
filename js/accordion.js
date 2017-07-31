@@ -5,10 +5,10 @@ $(function(){
     // $('.js-accordion-body').slideToggle();
 
     if(textIO === false){
-      $('.js-accordion-button').text('▲閉じる');
+      $('.js-accordion-button').text('▲ 閉じる');
       textIO = true;
     }else{
-      $('.js-accordion-button').text('▼もっと見る');
+      $('.js-accordion-button').text('▼ もっと見る');
       textIO = false;
     }
   });
