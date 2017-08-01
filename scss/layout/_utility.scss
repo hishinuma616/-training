@@ -9,13 +9,3 @@
 .l-bottom-large {
   margin-bottom: 20px;
 }
-
-.l-half {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  & > *:nth-child(odd) {
-    margin-right: 2%;
-  }
-}

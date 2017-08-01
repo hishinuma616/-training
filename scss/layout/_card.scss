@@ -1,0 +1,13 @@
+.l-half {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & > * {
+    margin-bottom: 2%;
+  }
+
+  & > *:nth-child(odd) {
+    margin-right: 2%;
+  }
+}

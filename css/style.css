@@ -548,18 +548,6 @@ textarea,
 .l-bottom-large {
   margin-bottom: 20px; }
 
-.l-half {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .l-half > *:nth-child(odd) {
-    margin-right: 2%; }
-
 .l-ranking-layout {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -569,6 +557,20 @@ textarea,
 
 .l-label {
   margin-right: 4px; }
+
+.l-half {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .l-half > * {
+    margin-bottom: 2%; }
+  .l-half > *:nth-child(odd) {
+    margin-right: 2%; }
 
 .heading-title {
   border-top: solid 4px #9b9b9b;
