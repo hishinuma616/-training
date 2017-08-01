@@ -545,13 +545,10 @@ textarea,
 .l-bottom-small {
   margin-bottom: 10px; }
 
-.l-bottom {
+.l-bottom-large {
   margin-bottom: 20px; }
 
-.l-margin-right {
-  margin-right: 10px; }
-
-.l-side-layout {
+.l-half {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,7 +557,7 @@ textarea,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .l-side-layout ::after {
+  .l-half > *:nth-child(odd) {
     margin-right: 2%; }
 
 .l-ranking-layout {
@@ -569,6 +566,9 @@ textarea,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+
+.l-label {
+  margin-right: 4px; }
 
 .heading-title {
   border-top: solid 4px #9b9b9b;
@@ -670,14 +670,13 @@ textarea,
   display: inline-block;
   background-color: #000;
   color: #fff;
-  width: 90px;
   border-radius: 4px;
   font-size: 12px;
-  margin-right: 4px; }
+  padding: 0 12px; }
 
 .card {
   border-radius: 4px;
-  width: 48%;
+  width: 46%;
   background-color: #fff;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;

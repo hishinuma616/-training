@@ -6,19 +6,16 @@
   margin-bottom: 10px;
 }
 
-.l-bottom {
+.l-bottom-large {
   margin-bottom: 20px;
 }
 
-.l-margin-right {
-  margin-right: 10px;
-}
-
-.l-side-layout {
+.l-half {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  ::after {
+
+  & > *:nth-child(odd) {
     margin-right: 2%;
   }
 }
