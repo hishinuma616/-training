@@ -1,0 +1,28 @@
+p,
+h1,
+h2,
+h3,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #eaeaea;
+}
+
+.section-base {
+  background-color: #fff;
+}
+
+$border-color: #9b9b9b;

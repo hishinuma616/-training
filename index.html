@@ -3,6 +3,8 @@
   <head>
      <meta charset='UTF-8'>
      <meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=no'>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+     <script src='./js/accordion.js'></script>
      <title>コーディング課題</title>
      <link rel='stylesheet' href='css/style.css'>
   </head>
@@ -29,7 +31,7 @@
       <p>パンくずリスト</p>
     </div>
     <div>
-      <img src='img/mainVisual-img.jpg' alt='メインビジュアル'>
+      <img src='' alt='メインビジュアル'>
     </div>
 
     <!-- タブ切り替えボタン -->
@@ -171,107 +173,233 @@
       </div>
     </div>
 
-    <div>
-      <ul>
-        <li>
-          <img src='' alt=''>
-          <a href=''>タイトル</a>
-          <p>説明テキスト説明テキスト</p>
+    <!-- カード型　▼ここから -->
+    <div class='section-container'>
+      <ul class='l-half'>
+        <li class='card'>
+          <a href="">
+            <div class='card-container l-align-center'>
+              <div class='card-thumbnail-container'>
+                <img class='card-thumbnail' src='./img/programming.jpg' alt='【未経験社歓迎】0から始めるプログラミングスクール'>
+              </div>
+              <div class='card-body'>
+                <h3 class='card-title'>【未経験社歓迎】<br>0から始めるプログラミングスクール</h3>
+                <p>説明テキスト説明テキスト</p>
+              </div>
+            </div>
+          </a>
         </li>
-        <li>
-          <img src='' alt=''>
-          <a href=''>タイトルタイトル</a>
-          <p>説明テキスト</p>
+        <li class='card'>
+          <a href="">
+            <div class='card-container l-align-center'>
+              <div class='card-thumbnail-container'>
+                <img class='card-thumbnail' src='./img/pc.jpg' alt='新人エンジニア向け！パソコンの選び方'>
+              </div>
+              <div class='card-body'>
+                <h3 class='card-title'>新人エンジニア向け！パソコンの選び方</h3>
+                <p>説明テキスト説明テキスト</p>
+              </div>
+            </div>
+          </a>
         </li>
-        <li>
-          <img src='' alt=''>
-          <a href=''>タイトルタイトルいタイトルタイトル</a>
-          <p>説明テキスト説明テキスト</p>
+        <li class='card'>
+          <a href="">
+            <div class='card-container l-align-center'>
+              <div class='card-thumbnail-container'>
+                <img class='card-thumbnail' src='./img/djembe.jpg' alt='プロ直伝！ジャンベで奏でる究極のアーメンブレイク'>
+              </div>
+              <div class='card-body'>
+                <h3 class='card-title'>プロ直伝！<br>ジャンベで奏でる究極のアーメンブレイク</h3>
+                <p>説明テキスト説明テキスト</p>
+              </div>
+            </div>
+          </a>
         </li>
-        <li>
-          <img src='' alt=''>
-          <a href=''>タイトルタイトル</a>
-          <p>説明テキスト説明テキスト</p>
+        <li class='card l-bottom-small'>
+          <a href="">
+            <div class='card-container l-align-center'>
+              <div class='card-thumbnail-container'>
+                <img class='card-thumbnail' src='./img/future-bass.jpg' alt='f【パリピ必聴future bassって？最新クラブミュージックまとめ'>
+              </div>
+              <div class='card-body'>
+                <h3 class='card-title'>【パリピ必聴】<br>future bassって？<br>最新クラブミュージックまとめ</h3>
+                <p>説明テキスト説明テキスト</p>
+              </div>
+            </div>
+          </a>
         </li>
       </ul>
     </div>
-    <!-- ランキングコンテンツ -->
-    <section>
-      <div>
-        <h2 class='heading-title'>ランキングコンテンツ</h2>
-        <p>2017年0月00日 更新</p>
-      </div>
-      <ol>
-        <li>
-          <img src='' alt='ランキング1位の画像'>
-          <p>タイトルタイトルタイトルタイトル</p>
-        </li>
-        <li>
-          <img src='' alt='ランキング2位の画像'>
-          <p>タイトルタイトルタイトルタイトル</p>
-        </li>
-        <li>
-          <img src='' alt='ランキング3位の画像'>
-          <p>タイトルタイトルタイトルタイトル</p>
-        </li>
-      </ol>
-      <a href=''>もっと見る</a>
-    </section>
+    <!-- カード型　▲ここまで -->
 
-    <!-- 特集 -->
-    <section>
+    <!-- ランキングコンテンツ　▼ここから -->
+    <section class='l-bottom-large section-base'>
       <div>
-        <h2 class='heading-title'>特集</h2>
+        <h2 class='heading-title'>
+          <p>今人気な観光地ランキング</p>
+          <p class='heading-sub-text'>2017年0月00日 更新</p>
+        </h2>
+      </div>
+      <ol class='l-ranking-layout'>
+        <li class='ranking-item ranking-wide'>
+          <div class='ranking-container'>
+            <div class='ranking-ribbon'>
+              <span class='ranking-ribbon-text'>1位</span>
+            </div>
+            <div class='ranking-thumbnail-container'>
+              <img class='ranking-thumbnail' src='./img/shirakawa.jpg' alt='1位、白川郷'>
+            </div>
+            <h3 class='ranking-title'>白川郷</h3>
+          </div>
+        </li>
+        <li class='ranking-item'>
+          <div class='ranking-container ranking-container-separate'>
+            <div class='ranking-ribbon'>
+              <span class='ranking-ribbon-text'>2位</span>
+            </div>
+            <div class='ranking-thumbnail-container'>
+              <img class='ranking-thumbnail' src='./img/okage-alley.jpg' alt='2位、おかげ横丁'>
+            </div>
+            <h3 class='ranking-title'>おかげ横丁</h3>
+          </div>
+        </li>
+        <li class='ranking-item'>
+          <div class='ranking-container'>
+            <div class='ranking-ribbon'>
+              <span class='ranking-ribbon-text'>3位</span>
+            </div>
+            <div class='ranking-thumbnail-container'>
+              <img class='ranking-thumbnail' src='./img/izu.jpg' alt='3位、伊豆'>
+            </div>
+            <h3 class='ranking-title'>伊豆</h3>
+          </div>
+        </li>
+        <!-- アコーディオン部分　▼ここから -->
+        <li class='ranking-item js-accordion-body is-hide'>
+          <div class='ranking-container ranking-container-separate'>
+            <div class='ranking-ribbon'>
+              <span class='ranking-ribbon-text'>4位</span>
+            </div>
+            <div class='ranking-thumbnail-container'>
+              <img class='ranking-thumbnail' src='./img/mont-saint-michel.jpg' alt='4位、モンサンミッシェル'>
+            </div>
+            <h3 class='ranking-title'>モンサンミッシェル</h3>
+          </div>
+        </li>
+        <li class='ranking-item js-accordion-body is-hide'>
+          <div class='ranking-container'>
+            <div class='ranking-ribbon'>
+              <span class='ranking-ribbon-text'>5位</span>
+            </div>
+            <div class='ranking-thumbnail-container'>
+              <img class='ranking-thumbnail' src='./img/kiyomizudera.jpg' alt='5位、清水寺'>
+            </div>
+            <h3 class='ranking-title'>清水寺</h3>
+          </div>
+        </li>
+        <!-- アコーディオン部分　▲ここまで -->
+      </ol>
+      <div class='button js-accordion-button l-align-center'>
+        <p class=''>▼ もっと見る</p>
+      </div>
+    </section>
+    <!-- ランキングコンテンツ　▲ここまで -->
+
+    <!-- 特集　▼ここから -->
+    <section class='l-bottom-large section-base'>
+      <div>
+        <h2 class='heading-title'>編集部ピックアップ</h2>
       </div>
       <ul>
-        <li>
+        <li class='media'>
           <a href=''>
-            <div class='media'>
-              <div class='media-container'>
-                <div class='media-thumbnail-container'>
-                  <img src='' alt='見出し画像'>
-                </div>
-                <div class='media-body'>
-                  <p><span>小見出し</span>テキスト</p>
-                  <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
-                  <p>[カテゴリ]</p>
-                </div>
+            <div class='media-container'>
+              <div class='media-thumbnail-container'>
+                <img class='media-thumbnail' src='./img/cafe-au-lait.jpg' alt='カフェオレの美味しい喫茶店特集'>
+              </div>
+              <div class='media-body'>
+                <p>
+                  <span class='label l-align-center'>グルメ</span>
+                  <span class='media-date'>2017.8.10</span>
+                </p>
+                <h3 class='media-title'>
+                  カフェオレの美味しい喫茶店特集
+                </h3>
+                <p class='media-caption'>by hishinuma</p>
               </div>
             </div>
           </a>
         </li>
-        <li>
+        <li class='media'>
           <a href=''>
-            <div>
-              <img src='' alt='見出し画像'>
-            </div>
-            <div>
-              <p><span>見出し</span>テキスト</p>
-              <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
-              <p>[カテゴリ]</p>
+            <div class='media-container'>
+              <div class='media-thumbnail-container'>
+                <img class='media-thumbnail'src='./img/cycling-course.jpg' alt='愛知県おすすめのサイクリングコース！'>
+              </div>
+              <div class='media-body'>
+                <p>
+                  <span class='label l-align-center'>アウトドア</span>
+                  <span class='media-date'>2017.6.16</span>
+                </p>
+                <h3 class='media-title'>
+                  愛知県おすすめのサイクリングコース！
+                </h3>
+                <p class='media-caption'>by Yuzuki</p>
+              </div>
             </div>
           </a>
         </li>
-        <li>
+        <li class='media'>
           <a href=''>
-            <div>
-              <img src='' alt='見出し画像'>
-            </div>
-            <div>
-              <p><span>小見出し</span>テキスト</p>
-              <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
-              <p>[カテゴリ]</p>
+            <div class='media-container'>
+              <div class='media-thumbnail-container'>
+                <img class='media-thumbnail' src='./img/texting-while-walking.jpg' alt='今すぐやめよう歩きスマホ'>
+              </div>
+              <div class='media-body'>
+                <p>
+                  <span class='label l-align-center'>ライフハック</span>
+                  <span class='media-date'>2017.4.4</span>
+                </p>
+                <h3 class='media-title'>
+                  今すぐやめよう歩きスマホ
+                </h3>
+                <p class='media-caption'>by kuragano</p>
+              </div>
             </div>
           </a>
         </li>
+        <!-- アコーディオン部分　▼ここから -->
+        <li class='media js-accordion-body is-hide'>
+          <a href=''>
+            <div class='media-container media-container-center'>
+              <div class='media-thumbnail-container'>
+                <img class='media-thumbnail' src='./img/date-spot.jpg' alt='おすすめデートスポット'>
+              </div>
+              <div class='media-body'>
+                <p>
+                  <span class='label l-align-center'>恋愛</span>
+                  <span class='media-date'>2017.3.4</span>
+                </p>
+                <h3 class='media-title'>
+                  おすすめデートスポット
+                </h3>
+                <p class='media-caption'>by takeda</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <!-- アコーディオン部分　▲ここまで -->
       </ul>
-      <a href=''>もっと見る</a>
+      <div class='button js-accordion-button l-align-center'>
+        <p>▼ もっと見る</p>
+      </div>
     </section>
+    <!-- 特集　▲ここまで -->
 
     <!-- 記事リスト -->
-    <section>
+    <section class='l-bottom-large section-base'>
       <div>
-        <h2 class='heading-title'>記事リスト</h2>
+        <h2 class='heading-title'>温泉記事リスト</h2>
       </div>
       <ul>
         <li>
@@ -279,11 +407,12 @@
             <div class='media'>
               <div class='media-container media-container-center'>
                 <div class='media-thumbnail-container'>
-                  <img class='media-thumbnail' src='./img/onsen.jpg' alt='記事リスト画像'>
+                  <img class='media-thumbnail-large' src='./img/top10-hot-springs-thumbnail.jpg'
+                   alt='夏に行きたい温泉TOP10'>
                 </div>
                 <div class='media-body'>
                   <h3 class='media-title'>夏に行きたい温泉TOP10</h3>
-                  <p>2017.7.12</p>
+                  <p class='media-date'>2017.7.12</p>
                 </div>
               </div>
             </div>
@@ -294,11 +423,14 @@
             <div class='media'>
               <div class='media-container media-container-center'>
                 <div class='media-thumbnail-container'>
-                  <img class='media-thumbnail' src='./img/onsen2.jpg' alt='記事リスト画像'>
+                  <img class='media-thumbnail-large' src='./img/health-hot-springs.jpg'
+                  alt='神経痛、冷え性、五十肩、そんな症状を改善！薬理効果のある温泉旅館まとめ'>
                 </div>
                 <div class='media-body'>
-                  <h3 class='media-title'>神経痛、冷え性、五十肩、そんな症状を改善！薬理効果のある温泉旅館まとめ</h3>
-                  <p>2017.7.16</p>
+                  <h3 class='media-title'>
+                    神経痛、冷え性、五十肩、そんな症状を改善！薬理効果のある温泉旅館まとめ
+                  </h3>
+                  <p class='media-date'>2017.7.16</p>
                 </div>
               </div>
             </div>
@@ -309,22 +441,25 @@
             <div class='media'>
               <div class='media-container media-container-center'>
                 <div class='media-thumbnail-container'>
-                  <img class='media-thumbnail' src='./img/onsen3.jpg' alt='記事リスト画像'>
+                  <img class='media-thumbnail-large' src='./img/bathing-thumbnail.jpg'
+                   alt='プロに学ぶ「体に優しい」入浴術。半身浴はもう古い！'>
                 </div>
                 <div class='media-body'>
                   <h3 class='media-title'>プロに学ぶ「体に優しい」入浴術。半身浴はもう古い！</h3>
-                  <p>2017.7.20</p>
+                  <p class='media-date'>2017.7.20</p>
                 </div>
               </div>
             </div>
           </a>
         </li>
       </ul>
-      <a href=''>もっと見る</a>
-    </sectoin>
+      <div class='button js-accordion-button l-align-center'>
+        <p class=''>▼ もっと見る</p>
+      </div>
+    </section>
 
     <!-- カテゴリリスト -->
-    <section>
+    <section class='l-bottom-large section-base'>
       <div>
         <h2 class='heading-title'>カテゴリリスト</h2>
       </div>

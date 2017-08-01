@@ -1,0 +1,65 @@
+.ranking-item {
+  position: relative;
+  width: 50%;
+  flex-grow: 1;
+
+  .ranking-ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+  }
+
+  .ranking-ribbon-text {
+    display: inline-block;
+    position: absolute;
+    padding: 5px 0;
+    left: -59px;
+    top: 12px;
+    width: 160px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 16px;
+    background: #39c3d4;
+    color: #fff;
+    transform: rotate(-45deg);
+    box-shadow: 0 0 0 2px rgb(57, 195, 212);
+    border-top: dashed 1px rgba(255, 255, 255, .65);
+    border-bottom: dashed 1px rgba(255, 255, 255, .65);
+  }
+
+  .ranking-container {
+    position: relative;
+    border-bottom: solid 1px $border-color;
+    padding: 10px;
+  }
+
+  .ranking-container-separate {
+    border-right: solid 1px $border-color;
+  }
+
+  .ranking-thumbnail-container {
+
+  }
+
+  .ranking-thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .ranking-title {
+    font-weight: bold;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+}
+
+.ranking-wide {
+  width: 100%;
+}

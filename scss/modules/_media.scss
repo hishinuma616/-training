@@ -12,7 +12,11 @@
   }
 
   .media-thumbnail {
-    height: 90px;
+    width: 90px;
+  }
+
+  .media-thumbnail-large {
+    width: 130px;
   }
 
   .media-thumbnail-container {
@@ -23,5 +27,13 @@
     color: #00f;
     font-size: 16px;
   }
+
+  .media-date,
+  .media-caption {
+    color: #9b9b9b;
+    font-size: 12px;
+  }
+
+
 
 }

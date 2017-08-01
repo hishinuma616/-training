@@ -2,15 +2,23 @@ p,
 h1,
 h2,
 h3,
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0; }
 
-ul {
+ul,
+ol {
   list-style: none; }
 
 a {
   text-decoration: none; }
+
+body {
+  background-color: #eaeaea; }
+
+.section-base {
+  background-color: #fff; }
 
 /*! sanitize.css v5.0.0 | CC0 License | github.com/jonathantneal/sanitize.css */
 /* Document (https://html.spec.whatwg.org/multipage/semantics.html#semantics)
@@ -24,7 +32,8 @@ a {
 ::after {
   background-repeat: no-repeat;
   /* 1 */
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   /* 2 */ }
 
 /**
@@ -44,7 +53,8 @@ a {
  * 3. Prevent font size adjustments after orientation changes in IE and iOS.
  */
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   cursor: default;
   /* 2 */
@@ -103,7 +113,8 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -148,7 +159,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -363,7 +375,8 @@ button:-moz-focusring,
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -402,7 +415,8 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -525,22 +539,70 @@ textarea,
 [aria-disabled] {
   cursor: default; }
 
-.heading-title {
-  border-top: solid 4px #00f;
-  border-bottom: solid 1px #00f;
+.l-align-center {
   text-align: center; }
 
-.media .media-container {
+.l-bottom-small {
+  margin-bottom: 10px; }
+
+.l-bottom-large {
+  margin-bottom: 20px; }
+
+.l-ranking-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
-  border-bottom: solid 1px #222;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.l-label {
+  margin-right: 4px; }
+
+.l-half {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .l-half > * {
+    margin-bottom: 2%; }
+  .l-half > *:nth-child(odd) {
+    margin-right: 2%; }
+
+.heading-title {
+  border-top: solid 4px #9b9b9b;
+  border-bottom: solid 1px #9b9b9b;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px 0; }
+
+.heading-sub-text {
+  font-size: 12px;
+  color: #9b9b9b; }
+
+.media .media-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: solid 1px #9b9b9b;
   padding: 10px; }
 
 .media .media-container-center {
-  align-items: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .media .media-thumbnail {
-  height: 90px; }
+  width: 90px; }
+
+.media .media-thumbnail-large {
+  width: 130px; }
 
 .media .media-thumbnail-container {
   margin-right: 10px; }
@@ -549,5 +611,99 @@ textarea,
   color: #00f;
   font-size: 16px; }
 
-.l-alignCenter {
-  text-align: center; }
+.media .media-date,
+.media .media-caption {
+  color: #9b9b9b;
+  font-size: 12px; }
+
+.ranking-item {
+  position: relative;
+  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+  .ranking-item .ranking-ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    overflow: hidden; }
+  .ranking-item .ranking-ribbon-text {
+    display: inline-block;
+    position: absolute;
+    padding: 5px 0;
+    left: -59px;
+    top: 12px;
+    width: 160px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 16px;
+    background: #39c3d4;
+    color: #fff;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-box-shadow: 0 0 0 2px #39c3d4;
+            box-shadow: 0 0 0 2px #39c3d4;
+    border-top: dashed 1px rgba(255, 255, 255, 0.65);
+    border-bottom: dashed 1px rgba(255, 255, 255, 0.65); }
+  .ranking-item .ranking-container {
+    position: relative;
+    border-bottom: solid 1px #9b9b9b;
+    padding: 10px; }
+  .ranking-item .ranking-container-separate {
+    border-right: solid 1px #9b9b9b; }
+  .ranking-item .ranking-thumbnail {
+    width: 100%;
+    height: 150px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .ranking-item .ranking-title {
+    font-weight: bold;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+
+.ranking-wide {
+  width: 100%; }
+
+.label {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 0 12px; }
+
+.card {
+  border-radius: 4px;
+  width: 46%;
+  background-color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+  .card .card-thumbnail {
+    width: 100%;
+    border-radius: 4px 4px 0 0; }
+  .card .card-title {
+    font-size: 14px; }
+  .card .card-body {
+    font-size: 10px;
+    padding: 4px; }
+
+.section-base {
+  background-color: #fff; }
+
+.section-container {
+  padding: 0 10px; }
+
+.button {
+  padding: 10px;
+  color: #000;
+  background-color: #fff; }
+
+.is-hide {
+  display: none; }

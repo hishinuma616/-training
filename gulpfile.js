@@ -2,6 +2,7 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var sassLint = require("gulp-sass-lint");
+var autoprefixer = require('gulp-autoprefixer');
 //タスクの定義
 
 //sassのコンパイル
@@ -21,8 +22,8 @@ gulp.task("lint", function() {
   .pipe(sassLint.failOnError())
 });
 
-//チェックとコンパイル
-gulp.task("style", function() {
+//チェックとコンパイル(自動)
+gulp.task("style-watch", function() {
   gulp.watch("scss/*.scss", function(){
     gulp.src("scss/*.scss")
     .pipe(sassLint())
@@ -31,6 +32,17 @@ gulp.task("style", function() {
     .pipe(sass())
     .pipe(gulp.dest("css"))
   })
+});
+
+//チェックとコンパイル（手動）
+gulp.task("style", function() {
+  gulp.src("scss/*.scss")
+  .pipe(sassLint())
+  .pipe(sassLint.format())
+  .pipe(sassLint.failOnError())
+  .pipe(sass())
+  .pipe(autoprefixer())
+  .pipe(gulp.dest("css"))
 });
 
 // //自動更新・文法チェック
