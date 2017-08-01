@@ -2,24 +2,23 @@
   text-align: center;
 }
 
+.l-bottom-small {
+  margin-bottom: 10px;
+}
+
 .l-bottom {
   margin-bottom: 20px;
 }
 
-.l-bottom-small {
-  margin-bottom: 20px;
-}
-
 .l-margin-right {
-  margin-right: 24px;
+  margin-right: 10px;
 }
 
-.l-side-layouyt {
-  display: flex;
-  justify-content: center;
-}
-
-.l-ranking-layout {
+.l-side-layout {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  ::after {
+    margin-right: 2%;
+  }
 }

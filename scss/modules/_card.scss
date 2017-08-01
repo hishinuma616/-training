@@ -1,10 +1,12 @@
 .card {
-  display: inline-block;
-  border-radius: 10px;
-  border: solid 1px #fff;
+  border-radius: 4px;
+  width: 48%;
+  background-color: #fff;
+  flex-grow: 1;
+  box-shadow: 0 1px 3px rgba(0,0,0, 0.25);
 
     .card-container {
-      width: 150px;
+      // width: 150px;
     }
 
     .card-thumbnail-container {
@@ -12,10 +14,16 @@
     }
 
     .card-thumbnail {
-      height: 120px;
+      width: 100%;
+      border-radius: 4px 4px 0 0;
     }
     //mediaにもタイトルあるから、別でモジュール作っても良さそうです
     .card-title {
+      font-size: 14px;
+    }
 
+    .card-body {
+      font-size: 10px;
+      padding: 4px;
     }
 }

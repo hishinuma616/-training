@@ -1,9 +1,10 @@
 //base
-@import './base/setting';
+@import './base/base';
 @import '../css/sanitize';
 
 //layout
 @import './layout/utility';
+@import './layout/ranking';
 
 //module
 @import './modules/heading';
