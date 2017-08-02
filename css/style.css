@@ -722,17 +722,17 @@ textarea,
   color: #000;
   background-color: #fff; }
 
-.category-container {
+.category .category-item {
   width: 22%; }
 
-.category-thumbnail {
+.category .category-thumbnail {
   width: 100%;
   border-radius: 50%; }
 
-.category-thumbnail-container {
+.category .category-thumbnail-container {
   width: 100%; }
 
-.category-title {
+.category .category-title {
   color: #00f;
   font-size: 12px; }
 
