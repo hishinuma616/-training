@@ -542,11 +542,17 @@ textarea,
 .l-align-center {
   text-align: center; }
 
+.l-align-right {
+  text-align: right; }
+
 .l-bottom-small {
   margin-bottom: 10px; }
 
 .l-bottom-large {
   margin-bottom: 20px; }
+
+.l-section-inner {
+  padding: 0 10px; }
 
 .l-ranking-layout {
   display: -webkit-box;
@@ -588,6 +594,32 @@ textarea,
     margin-right: 4%; }
   .l-category > *:nth-child(4n) {
     margin-right: 0; }
+
+.l-tab-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .l-tab-header > * {
+    margin-right: 2%; }
+  .l-tab-header > *:nth-child(3) {
+    margin-right: 0; }
+
+.l-check-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .l-check-box > *:nth-child(odd) {
+    border-right: solid 1px #9b9b9b; }
 
 .heading-title {
   border-top: solid 4px #9b9b9b;
@@ -712,15 +744,20 @@ textarea,
     padding: 4px; }
 
 .section-base {
-  background-color: #fff; }
+  background-color: #fff;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #9b9b9b; }
 
 .section-container {
   padding: 0 10px; }
 
 .button {
   padding: 10px;
-  color: #000;
-  background-color: #fff; }
+  color: #fff;
+  background-color: #149214;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); }
 
 .category .category-item {
   width: 22%; }
@@ -735,6 +772,39 @@ textarea,
 .category .category-title {
   color: #00f;
   font-size: 12px; }
+
+.tab .tab-header .tab-header-item {
+  border-radius: 4px 4px 0 0;
+  border: solid 2px #9b9b9b;
+  padding: 10px 0;
+  color: #000;
+  background-color: #fff;
+  width: 32%;
+  text-align: center; }
+
+.tab .tab-header .tab-item-select {
+  border-bottom: 0; }
+
+.tab .tab-body {
+  background-color: #fff;
+  border: solid 2px #9b9b9b;
+  border-top: 0;
+  padding: 15px 0;
+  border-radius: 0 0 4px 4px; }
+
+.check-box .check-box-item {
+  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-bottom: solid 1px #9b9b9b;
+  padding: 10px; }
+
+.search {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  resize: none; }
 
 .is-hide {
   display: none; }

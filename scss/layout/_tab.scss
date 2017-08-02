@@ -1,0 +1,14 @@
+.l-tab-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & > * {
+    margin-right: 2%;
+  }
+
+  & > *:nth-child(3) {
+    margin-right: 0;
+  }
+
+}

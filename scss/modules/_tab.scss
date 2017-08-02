@@ -1,0 +1,28 @@
+.tab {
+
+  .tab-header {
+
+    .tab-header-item {
+      border-radius: 4px 4px 0 0;
+      border: solid 2px $border-color;
+      padding: 10px 0;
+      color: #000;
+      background-color: #fff;
+      width: 32%;
+      text-align: center;
+    }
+    .tab-item-select {
+      border-bottom: 0;
+    }
+
+  }
+
+  .tab-body {
+      background-color: #fff;
+      border: solid 2px $border-color;
+      border-top: 0;
+      padding: 15px 0;
+      border-radius: 0 0 4px 4px;
+  }
+
+}

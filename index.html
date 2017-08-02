@@ -30,56 +30,58 @@
     <div>
       <p>パンくずリスト</p>
     </div>
-    <div>
-      <img src='' alt='メインビジュアル'>
+    <div class='l-bottom-large'>
+      <img src='./img/shirakawa.jpg' alt='白川郷の写真（仮）'>
     </div>
 
-    <!-- タブ切り替えボタン -->
-    <div>
-      <ul>
-        <li>
-          <a href=''>
-            <p>カテゴリ検索</p>
-          </a>
-        </li>
-        <li>
-          <a href=''>
-            <p>おすすめ記事</p>
-          </a>
-        </li>
-        <li>
-          <a href=''>
-            <p>キーワード検索</p>
-          </a>
-        </li>
-      </ul>
+    <!-- タブ1▼ここから -->
+    <div class='section-container l-bottom-large'>
+      <div class='tab'>
+        <ul class='tab-header l-tab-header'>
+          <li class='tab-header-item tab-item-select'>記事検索</li>
+          <li class='tab-header-item'>閲覧履歴</li>
+          <li class='tab-header-item'>フィルター</li>
+        </ul>
+        <div class='tab-body l-bottom-small'>
+          <div class='check-box l-check-box l-bottom-small'>
+            <label class='check-box-item'>
+              <input type='checkbox'>旅行
+            </label>
+            <label class='check-box-item'>
+              <input type='checkbox'>テクノロジー
+            </label>
+            <label class='check-box-item'>
+              <input type='checkbox'>アウトドア
+            </label>
+            <label class='check-box-item'>
+              <input type='checkbox'>恋愛
+            </label>
+            <label class='check-box-item'>
+              <input type='checkbox'>グルメ
+            </label>
+            <label class='check-box-item'>
+              <input type='checkbox'>ライフハック
+            </label>
+            <label class='check-box-item'>
+              <input type='checkbox'>音楽
+            </label>
+            <label class='check-box-item'>
+              <input type='checkbox'>哲学
+            </label>
+          </div>
+          <div class='l-section-inner'>
+            <div class='l-align-right l-bottom-small'>
+              <a href=''>もっと詳しく</a>
+            </div>
+            <input type='search' class='search l-section-inner l-bottom-small' placeholder='検索フォーム'>
+            <div class='button l-align-center'>
+              <button type='submit'>検索する</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- タブ１ -->
-    <div>
-      <div>
-        <label>
-          <input type='checkbox'>カテゴリ1
-        </label>
-        <label>
-          <input type='checkbox'>カテゴリ2
-        </label>
-        <label>
-          <input type='checkbox'>カテゴリ3
-        </label>
-        <label>
-          <input type='checkbox'>カテゴリ4
-        </label>
-      </div>
-      <div>
-        <a href=''>もっと詳しく</a>
-      </div>
-      <div>
-        <input type='search' placeholder='検索フォーム'>
-      </div>
-      <div>
-        <button type='submit'>検索する</button>
-      </div>
-    </div>
+    <!-- タブ１▲ここまで -->
 
     <!-- タブ2 -->
     <div>
@@ -240,7 +242,7 @@
           <p class='heading-sub-text'>2017年0月00日 更新</p>
         </h2>
       </div>
-      <ol class='l-ranking-layout'>
+      <ol class='l-ranking-layout l-bottom-small'>
         <li class='ranking-item ranking-wide'>
           <div class='ranking-container'>
             <div class='ranking-ribbon'>
@@ -299,8 +301,10 @@
         </li>
         <!-- アコーディオン部分　▲ここまで -->
       </ol>
-      <div class='button js-accordion-button l-align-center'>
-        <p class=''>▼ もっと見る</p>
+      <div class='l-section-inner'>
+        <div class='button js-accordion-button l-align-center'>
+          <p class=''>▼ もっと見る</p>
+        </div>
       </div>
     </section>
     <!-- ランキングコンテンツ　▲ここまで -->
@@ -310,7 +314,7 @@
       <div>
         <h2 class='heading-title'>編集部ピックアップ</h2>
       </div>
-      <ul>
+      <ul class='l-bottom-small'>
         <li class='media'>
           <a href=''>
             <div class='media-container'>
@@ -390,8 +394,10 @@
         </li>
         <!-- アコーディオン部分　▲ここまで -->
       </ul>
-      <div class='button js-accordion-button l-align-center'>
-        <p>▼ もっと見る</p>
+      <div class='l-section-inner'>
+        <div class='button js-accordion-button l-align-center'>
+          <p>▼ もっと見る</p>
+        </div>
       </div>
     </section>
     <!-- 特集　▲ここまで -->
@@ -401,7 +407,7 @@
       <div>
         <h2 class='heading-title'>温泉記事リスト</h2>
       </div>
-      <ul>
+      <ul class='l-bottom-small'>
         <li>
           <a href=''>
             <div class='media'>
@@ -453,8 +459,10 @@
           </a>
         </li>
       </ul>
-      <div class='button js-accordion-button l-align-center'>
-        <p class=''>▼ もっと見る</p>
+      <div class='l-section-inner'>
+        <div class='button js-accordion-button l-align-center'>
+          <p class=''>▼ もっと見る</p>
+        </div>
       </div>
     </section>
 

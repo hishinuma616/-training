@@ -1,0 +1,9 @@
+.l-check-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & > *:nth-child(odd) {
+    border-right: solid 1px $border-color;
+  }
+}
