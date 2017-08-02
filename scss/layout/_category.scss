@@ -1,0 +1,16 @@
+.l-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0 10px;
+
+  & > * {
+    margin-bottom: 16px;
+    margin-right: 4%;
+  }
+
+  & > *:nth-child(4n) {
+    margin-right: 0;
+  }
+}
