@@ -10,20 +10,25 @@
     }
 
     .card-thumbnail-container {
-  
+
     }
 
     .card-thumbnail {
       width: 100%;
       border-radius: 4px 4px 0 0;
     }
-    //mediaにもタイトルあるから、別でモジュール作っても良さそうです
-    .card-title {
-      font-size: 14px;
-    }
 
     .card-body {
       font-size: 10px;
       padding: 4px;
+    }
+
+    .card-title {
+      font-size: 14px;
+    }
+
+    .card-date {
+      font-size: 12px;
+      color: #9b9b9b;
     }
 }
