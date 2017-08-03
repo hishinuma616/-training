@@ -1,4 +1,6 @@
 .l-tab-header {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -11,4 +13,10 @@
     margin-right: 0;
   }
 
+}
+
+.l-tab-body {
+  position: relative;
+  top: -2px;
+  z-index: 0;
 }

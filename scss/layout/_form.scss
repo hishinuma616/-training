@@ -1,0 +1,22 @@
+.l-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & > *:nth-child(odd) {
+    border-right: solid 1px $border-color;
+  }
+}
+
+.l-pulldown-title {
+  width: 20%;
+}
+
+.l-pulldown {
+  width: 75%;
+  margin-left: 5%;
+}
+
+input[type="checkbox"] {
+  margin-right: 4%;
+}

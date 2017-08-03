@@ -3,7 +3,9 @@ h1,
 h2,
 h3,
 ul,
-ol {
+ol,
+dl,
+dd {
   margin: 0;
   padding: 0; }
 
@@ -13,6 +15,16 @@ ol {
 
 a {
   text-decoration: none; }
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: button; }
 
 body {
   background-color: #eaeaea; }
@@ -596,6 +608,8 @@ textarea,
     margin-right: 0; }
 
 .l-tab-header {
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,7 +623,12 @@ textarea,
   .l-tab-header > *:nth-child(3) {
     margin-right: 0; }
 
-.l-check-box {
+.l-tab-body {
+  position: relative;
+  top: -2px;
+  z-index: 0; }
+
+.l-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,8 +637,18 @@ textarea,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .l-check-box > *:nth-child(odd) {
+  .l-checkbox > *:nth-child(odd) {
     border-right: solid 1px #9b9b9b; }
+
+.l-pulldown-title {
+  width: 20%; }
+
+.l-pulldown {
+  width: 75%;
+  margin-left: 5%; }
+
+input[type="checkbox"] {
+  margin-right: 4%; }
 
 .heading-title {
   border-top: solid 4px #9b9b9b;
@@ -647,11 +676,32 @@ textarea,
       -ms-flex-align: center;
           align-items: center; }
 
+.media .media-thumbnail-small {
+  width: 50px; }
+
 .media .media-thumbnail {
   width: 90px; }
 
 .media .media-thumbnail-large {
   width: 130px; }
+
+.media .circle-small {
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.media .circle {
+  height: 90px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.media .circle-large {
+  height: 130px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .media .media-thumbnail-container {
   margin-right: 10px; }
@@ -782,17 +832,15 @@ textarea,
   width: 32%;
   text-align: center; }
 
-.tab .tab-header .tab-item-select {
+.tab .tab-header .is-select {
   border-bottom: 0; }
 
 .tab .tab-body {
   background-color: #fff;
   border: solid 2px #9b9b9b;
-  border-top: 0;
-  padding: 15px 0;
   border-radius: 0 0 4px 4px; }
 
-.check-box .check-box-item {
+.checkbox .checkbox-item {
   width: 50%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -805,6 +853,14 @@ textarea,
   height: 40px;
   border-radius: 4px;
   resize: none; }
+
+.pulldown {
+  height: 40px;
+  border: solid 1px #9b9b9b;
+  width: 100%; }
+
+.main-visual .main-visual-image {
+  width: 100%; }
 
 .is-hide {
   display: none; }

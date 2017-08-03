@@ -1,0 +1,23 @@
+.checkbox {
+
+  .checkbox-item {
+      width: 50%;
+      flex-grow: 1;
+      border-bottom: solid 1px $border-color;
+      padding: 10px;
+  }
+
+}
+
+.search {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  resize: none;
+}
+
+.pulldown {
+  height: 40px;
+  border: solid 1px $border-color;
+  width: 100%;
+}

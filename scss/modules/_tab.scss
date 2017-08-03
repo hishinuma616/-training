@@ -11,7 +11,8 @@
       width: 32%;
       text-align: center;
     }
-    .tab-item-select {
+
+    .is-select {
       border-bottom: 0;
     }
 
@@ -20,8 +21,6 @@
   .tab-body {
       background-color: #fff;
       border: solid 2px $border-color;
-      border-top: 0;
-      padding: 15px 0;
       border-radius: 0 0 4px 4px;
   }
 
