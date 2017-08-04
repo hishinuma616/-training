@@ -11,7 +11,7 @@
 
 .form-input {
   width: 100%;
-  height: 40px;
+  padding: 10px;
   border-radius: 4px;
   resize: none;
 }
@@ -26,15 +26,19 @@
 
 .form-list {
 
-  .form-list-container {
-    display: flex;
-    align-items: flex-start;
-    border-bottom: solid 1px $border-color;
-    padding: 10px;
-  }
+  .form-list-item {
 
-  .form-list-container-center {
-    align-items: center;
+    .form-list-container {
+      display: flex;
+      align-items: flex-start;
+      border-bottom: solid 1px $border-color;
+      padding: 10px;
+    }
+
+    .form-list-container-center {
+      align-items: center;
+    }
+
   }
 
 }

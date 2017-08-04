@@ -1,6 +1,6 @@
 //base
-@import './base/base';
 @import '../css/sanitize';
+@import './base/base';
 
 //layout
 @import './layout/utility';
@@ -10,6 +10,9 @@
 @import './layout/category';
 @import './layout/tab';
 @import './layout/form';
+@import './layout/header';
+@import './layout/nav';
+@import './layout/footer';
 
 //module
 @import './modules/heading';
@@ -24,6 +27,9 @@
 @import './modules/form';
 @import './modules/main-visual';
 @import './modules/circle';
+@import './modules/header';
+@import './modules/nav';
+@import './modules/footer';
 
 //state
 @import './state/state';

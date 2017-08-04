@@ -1,0 +1,25 @@
+.footer {
+
+  .footer-nav {
+
+    & > * {
+      border-right: solid 1px $border-color;
+    }
+
+    & > *:last-child {
+      border-right: 0;
+    }
+
+    .footer-link {
+      padding: 10px 5px;
+    }
+
+  }
+
+  .copylight {
+    padding: 10px;
+    background-color: #a0a0a0;
+    color: #fff;
+  }
+
+}
