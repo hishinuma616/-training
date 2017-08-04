@@ -6,17 +6,25 @@
       border-right: solid 1px $border-color;
     }
 
+    & > *:first-child {
+      border-radius: 4px 0 0 4px;
+    }
+
     & > *:last-child {
       border-right: 0;
+      border-radius: 0 4px 4px 0;
     }
 
-    .footer-link {
+    .footer-nav-item {
       padding: 10px 5px;
+      background-color: #fff;
+      flex-grow: 1;
+      width: 33%;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
     }
-
   }
 
-  .copylight {
+  .footer-copylight {
     padding: 10px;
     background-color: #a0a0a0;
     color: #fff;

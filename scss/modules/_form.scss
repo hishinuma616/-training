@@ -21,24 +21,16 @@
   position: relative;
   border: solid 1px $border-color;
   width: 100%;
-
 }
 
 .form-list {
 
   .form-list-item {
-
-    .form-list-container {
-      display: flex;
-      align-items: flex-start;
-      border-bottom: solid 1px $border-color;
-      padding: 10px;
-    }
-
-    .form-list-container-center {
-      align-items: center;
-    }
-
+    display: flex;
+    align-items: flex-start;
+    border-bottom: solid 1px $border-color;
+    padding: 10px;
+    align-items: center;
   }
 
 }

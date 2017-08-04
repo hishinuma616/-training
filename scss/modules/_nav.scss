@@ -1,19 +1,18 @@
-.nav {
+.nav-header {
 
   border-bottom: solid 2px $border-color;
 
-  .nav-item {
+  .nav-header-item {
     width: 25%;
     flex-grow: 1;
     padding: 15px 5px;
-  }
-
-  & > * {
     border-right: solid 1px $border-color;
+
+    &:last-child {
+      border-right: 0;
+    }
+
   }
 
-  & > *:last-child {
-    border-right: 0;
-  }
 
 }

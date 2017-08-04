@@ -873,7 +873,7 @@ body {
   border: solid 1px #9b9b9b;
   width: 100%; }
 
-.form-list .form-list-item .form-list-container {
+.form-list .form-list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -881,14 +881,12 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   border-bottom: solid 1px #9b9b9b;
-  padding: 10px; }
-
-.form-list .form-list-item .form-list-container-center {
+  padding: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
 
-.main-visual .main-visual-image {
+.mainVisual .mainVisual-img {
   width: 100%; }
 
 .circle {
@@ -898,34 +896,44 @@ body {
   padding: 5px 10px;
   background-color: #fff;
   border-bottom: solid 4px #9b9b9b; }
-  .header .header-logo-img {
+  .header .header-logo {
     height: 40px; }
-  .header .header-menu .header-menu-icon {
+  .header .header-menu-container .header-menu {
     height: 30px; }
 
-.nav {
+.nav-header {
   border-bottom: solid 2px #9b9b9b; }
-  .nav .nav-item {
+  .nav-header .nav-header-item {
     width: 25%;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    padding: 15px 5px; }
-  .nav > * {
+    padding: 15px 5px;
     border-right: solid 1px #9b9b9b; }
-  .nav > *:last-child {
-    border-right: 0; }
+    .nav-header .nav-header-item:last-child {
+      border-right: 0; }
 
 .footer .footer-nav > * {
   border-right: solid 1px #9b9b9b; }
 
+.footer .footer-nav > *:first-child {
+  border-radius: 4px 0 0 4px; }
+
 .footer .footer-nav > *:last-child {
-  border-right: 0; }
+  border-right: 0;
+  border-radius: 0 4px 4px 0; }
 
-.footer .footer-nav .footer-link {
-  padding: 10px 5px; }
+.footer .footer-nav .footer-nav-item {
+  padding: 10px 5px;
+  background-color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 33%;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
 
-.footer .copylight {
+.footer .footer-copylight {
   padding: 10px;
   background-color: #a0a0a0;
   color: #fff; }

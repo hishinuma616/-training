@@ -11,28 +11,26 @@
   <body>
     <header>
       <div class='header l-header'>
-          <h1>
-            <div class='header-logo'>
-              <img class='header-logo-img' src='./img/logo.png' alt='ロゴアイコン'>
-            </div>
-          </h1>
-        <div class='header-menu'>
-          <img class='header-menu-icon' src='./svg/hamburger.svg' alt='メニューアイコン'>
+        <h1 class='header-logo-container'>
+          <img class='header-logo' src='./img/logo.png' alt='ロゴアイコン'>
+        </h1>
+        <div class='header-menu-container'>
+          <img class='header-menu' src='./svg/hamburger.svg' alt='メニューアイコン'>
         </div>
       </div>
     </header>
     <nav>
-      <ul class='nav l-nav l-bottom-small'>
-        <li class='nav-item l-align-center'>
+      <ul class='nav-header l-nav l-bottom-small'>
+        <li class='nav-header-item l-align-center'>
           <a href="">カテゴリ</a>
         </li>
-        <li class='nav-item l-align-center'>
+        <li class='nav-header-item l-align-center'>
           <a href="">カテゴリ</a>
         </li>
-        <li class='nav-item l-align-center'>
+        <li class='nav-header-item l-align-center'>
           <a href="">カテゴリ</a>
         </li>
-        <li class='nav-item l-align-center'>
+        <li class='nav-header-item l-align-center'>
           <a href="">カテゴリ</a>
         </li>
       </ul>
@@ -40,8 +38,8 @@
     <div class='l-section-inner l-bottom-small'>
       <p>パンくずリスト</p>
     </div>
-    <div class='main-visual l-bottom-large'>
-      <img class='main-visual-image' src='./img/shirakawa.jpg' alt='白川郷の写真（仮）'>
+    <div class='mainVisual l-bottom-large'>
+      <img class='mainVisual-img' src='./img/shirakawa.jpg' alt='白川郷の写真（仮）'>
     </div>
 
     <!-- タブ1▼ここから -->
@@ -185,44 +183,38 @@
         <form action='' method='post'>
           <div class='tab-body l-tab-body l-bottom-small'>
             <div class='form-list'>
-              <div class='form-list-item'>
-                <dl class='form-list-container form-list-container-center'>
-                  <dt class='l-form-list-title'>更新日時</dt>
-                  <dd class='l-form-list-body'>
-                    <select class='form-pulldown l-section-inner'>
-                      <option value=''>選択してください</option>
-                      <option value='week'>1週間以内</option>
-                      <option value='month'>1ヶ月以内</option>
-                      <option value='year'>1年以内</option>
-                    </select>
-                  </dd>
-                </dl>
-              </div>
-              <div class='form-list-item'>
-                <dl class='form-list-container form-list-container-center'>
-                  <dt class='l-form-list-title'>いいね</dt>
-                  <dd class='l-form-list-body'>
-                    <select class='form-pulldown l-section-inner'>
-                      <option value=''>選択してください</option>
-                      <option value='many'>多い順</option>
-                      <option value='little'>少ない順</option>
-                    </select>
-                  </dd>
-                </dl>
-              </div>
-              <div class='form-list-item'>
-                <dl class='form-list-container form-list-container-center l-bottom-small'>
-                  <dt class='l-form-list-title'>刺激度</dt>
-                  <dd class='l-form-list-body'>
-                    <select class='form-pulldown l-section-inner'>
-                      <option value=''>選択してください</option>
-                      <option value='small'>小</option>
-                      <option value='medium'>中</option>
-                      <option value='big'>大</option>
-                    </select>
-                  </dd>
-                </dl>
-              </div>
+              <dl class='form-list-item l-vertical-center'>
+                <dt class='l-form-list-title'>更新日時</dt>
+                <dd class='l-form-list-body'>
+                  <select class='form-pulldown l-section-inner'>
+                    <option value=''>選択してください</option>
+                    <option value='week'>1週間以内</option>
+                    <option value='month'>1ヶ月以内</option>
+                    <option value='year'>1年以内</option>
+                  </select>
+                </dd>
+              </dl>
+              <dl class='form-list-item l-vertical-center'>
+                <dt class='l-form-list-title'>いいね</dt>
+                <dd class='l-form-list-body'>
+                  <select class='form-pulldown l-section-inner'>
+                    <option value=''>選択してください</option>
+                    <option value='many'>多い順</option>
+                    <option value='little'>少ない順</option>
+                  </select>
+                </dd>
+              </dl>
+              <dl class='form-list-item l-vertical-center l-bottom-small'>
+                <dt class='l-form-list-title'>刺激度</dt>
+                <dd class='l-form-list-body'>
+                  <select class='form-pulldown l-section-inner'>
+                    <option value=''>選択してください</option>
+                    <option value='small'>小</option>
+                    <option value='medium'>中</option>
+                    <option value='big'>大</option>
+                  </select>
+                </dd>
+              </dl>
             </div>
             <div class='l-section-inner'>
               <div class='button l-align-center l-bottom-small'>
@@ -435,13 +427,13 @@
         <!-- アコーディオン部分　▼ここから -->
         <li class='media js-accordion-body is-hide'>
           <a href=''>
-            <div class='media-container media-container-center'>
+            <div class='media-container'>
               <div class='media-thumbnail-container'>
                 <img class='media-thumbnail' src='./img/date-spot.jpg' alt='おすすめデートスポット'>
               </div>
               <div class='media-body'>
                 <p>
-                  <span class='label l-align-center'>恋愛</span>
+                  <span class='label l-align-cente'>恋愛</span>
                   <span class='media-date'>2017.3.4</span>
                 </p>
                 <h3 class='media-title'>
@@ -618,18 +610,18 @@
     <!-- フッター -->
     <footer>
       <div class='footer'>
-        <ul class='footer-nav l-footer-nav l-bottom-large'>
-          <li class='footer-link'>
+        <ul class='footer-nav l-footer-nav l-bottom-large l-section-inner'>
+          <li class='footer-nav-item l-align-center'>
             <a href=''>Blog</a>
           </li>
-          <li class='footer-link'>
-            <a href=''>フッターリンク2</a>
+          <li class='footer-nav-item l-align-center'>
+            <a href=''>SNS</a>
           </li>
-          <li class='footer-link'>
-            <a href=''>フッターリンク3</a>
+          <li class='footer-nav-item l-align-center'>
+            <a　href=''>公式サイト</a>
           </li>
         </ul>
-        <div class='copylight l-align-center'>
+        <div class='footer-copylight l-align-center'>
           <p><small>Copyright ©︎dummytext</small></p>
         </div>
       </div>
