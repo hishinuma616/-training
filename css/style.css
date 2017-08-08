@@ -640,10 +640,10 @@ body {
   .l-form-half > *:nth-child(odd) {
     border-right: solid 1px #9b9b9b; }
 
-.l-form-list-title {
+.l-formList-item-title {
   width: 20%; }
 
-.l-form-list-body {
+.l-formList-item-body {
   width: 75%;
   margin-left: 5%; }
 
@@ -873,7 +873,7 @@ body {
   border: solid 1px #9b9b9b;
   width: 100%; }
 
-.form-list .form-list-item {
+.formList .formList-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
